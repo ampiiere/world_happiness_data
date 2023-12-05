@@ -52,7 +52,7 @@ label.panel-label:hover {
 #panel-2-ctrl:checked ~ #panels #panel-2 main {
   max-height: initial;
   opacity: 1;
-  padding: 10px 5px;
+  padding: 48px 24px;
 }
 
 #panel-3-ctrl:checked ~ #panels #panel-3 main {

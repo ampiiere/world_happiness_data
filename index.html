@@ -49,7 +49,7 @@
     </li><!--INLINE-BLOCK FIX
  --><li id="li-for-panel-5" class="last">
       <label class="panel-label"
-             for="panel-5-ctrl">Insights</label>
+             for="panel-5-ctrl">About the data</label>
     </li>
     <label id="close-nav-label" for="nav-ctrl">Close</label>
 </ul>
@@ -60,8 +60,8 @@
     <section id="panel-1">
       <main>
         <h1>Task 1: Country happiness patterns + trends</h1>
+        <h2>Choloropleth Map + Stacked Bar chart</h2>
         <p>In task one we use a chloropleth map and a bar chart, linked by the year slider to explore happiness patterns and trends.</p>
-        <h3>Choloropleth Map + Stacked Bar chart</h3>
         <div id="observablehq-viewof-yearSelect-5eee6406"></div>
         <div id="observablehq-viewof-map_display_var-5eee6406"></div>
         <div id="observablehq-mapviz-5eee6406"></div>
@@ -221,10 +221,22 @@
     </section>
     <section id="panel-5">
       <main>
-        <h1>Menu</h1>
-        <p>On small screens, the tabs fold down into an expandable menu. To trigger the menu, I use a <code>checkbox</code> (note that it appears at the top of the screen on smaller screen sizes). There are two labels that trigger this checkbox. One opens and the other closes the menu. The one that opens is absolutely positioned invisibly over the "active" menu item. The closing label is at the bottom of the open menu.</p>
+        <h1>World happiness data</h1>
+        <ul>
+          <li><a href="https://worldhappiness.report/data/">World happiness Report</a></li>
+          <li><a href="https://github.com/ampiiere/world_happiness_data">Cleaned data on github repo</a></li>
+        </ul>
+        <p>The World Happiness Report is a landmark survey of the state of global happiness.The report continues to gain global recognition as governments, organizations and civil society increasingly use happiness indicators to inform their policy-making decisions.The happiness scores and rankings use data from the Gallup World Poll. The scores are based on answers to the main life evaluation question asked in the poll. The following columns: GDP per Capita, Family, Life Expectancy, Freedom, Generosity, Trust(Government Corruption) describe the extent to which these factors contribute in evaluating the happiness in each country. The Dystopia Residual metric actually is the Dystopia Happiness Score(1.85) + the Residual value or the unexplained value for each country as stated in the previous answer. If you add all these factors up, you get the happiness score so it might be un-reliable to model them to predict Happiness Scores.
+        (from <a href="https://www.kaggle.com/datasets/unsdsn/world-happiness">Kaggle world happiness dataset</a> description)</p>
+        <!-- <p>On small screens, the tabs fold down into an expandable menu. To trigger the menu, I use a <code>checkbox</code> (note that it appears at the top of the screen on smaller screen sizes). There are two labels that trigger this checkbox. One opens and the other closes the menu. The one that opens is absolutely positioned invisibly over the "active" menu item. The closing label is at the bottom of the open menu.</p>
         <p>The best way I have found to show and hide content without using absolute positioning is to use a combination of <code>max-height</code> and <code>opacity</code>. When "inactive", the content has a <code>max-height: 0</code> and <code>opacity: 0</code>.</p>
-        <p>It also has a <code>transition: opacity</code> when I don't know the future height (this panel's content for example) and <code>transition: opacity, max-height</code> when I do know the future height (like the menu). When "active", the <code>max-height</code> and <code>opacity</code> get positive values and the content will transition in. I'm sure flexbox could get me around this hack, but this works for now.</p>   
+        <p>It also has a <code>transition: opacity</code> when I don't know the future height (this panel's content for example) and <code>transition: opacity, max-height</code> when I do know the future height (like the menu). When "active", the <code>max-height</code> and <code>opacity</code> get positive values and the content will transition in. I'm sure flexbox could get me around this hack, but this works for now.</p> -->
+        <h2>Sources used:</h2>
+        <ul>
+          <li><a href="https://www.imf.org/external/datamapper/NGDPDPC@WEO/OEMDC/ADVEC/WEOWORLD">GDP per capita dataset (from IMF)</a>​</li>
+          <li><a href="https://www.who.int/data/gho/data/indicators/indicator-details/GHO/current-health-expenditure-(che)-per-capita-in-us$">Current health expenditure(CHE) per capita dataset (from WHO) (from IMF)</a>​</li>
+          <li><a href="https://dashboards.sdgindex.org/downloads">Sustainable Development(SDG) Report (sdgindex.org)​</a>​</li>
+        </ul>
       </main>
     </section>
   </div>
