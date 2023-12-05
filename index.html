@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - COMP4462</title>
+  <title>COMP4462 Project: World happiness report</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./style.css">
 
@@ -59,20 +59,18 @@
   <div class="container">
     <section id="panel-1">
       <main>
-        <h1>Task 1: Identifying patterns</h1>
-        <p>In task one lorem ipsum blah blah blah</p>
-        <h3>Choloropleth Map + Barchart</h3>
-        <p></p>
+        <h1>Task 1: Country happiness patterns + trends</h1>
+        <p>In task one we use a chloropleth map and a bar chart, linked by the year slider to explore happiness patterns and trends.</p>
+        <h3>Choloropleth Map + Stacked Bar chart</h3>
         <div id="observablehq-viewof-yearSelect-5eee6406"></div>
         <div id="observablehq-viewof-map_display_var-5eee6406"></div>
         <div id="observablehq-mapviz-5eee6406"></div>
-        <h3>Bar Chart</h3>
         <div id="observablehq-viewof-bar_display_var-5eee6406"></div>
         <div id="observablehq-viewof-n1-5eee6406"></div>
         <div id="observablehq-viewof-barchart_view-5eee6406"></div>
         <div id="observablehq-barchartkey-5eee6406"></div>
         <div id="observablehq-barchart-5eee6406"></div>
-        <p>Observable link: <a href="https://observablehq.com/@ampiiere-ws/world-happiness@798">World Happiness Task 1 by ampiiere&#039;s Workspace</a></p>
+        <p><a href="https://observablehq.com/@ampiiere-ws/world-happiness@798">World Happiness Task 1 by ampiiere&#039;s Workspace</a></p>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
         <script type="module">
@@ -90,7 +88,23 @@
           return ["happiness_select_year","happiness_barchart_data","mapnrange","correlations","pct","countries_ls","new_map","corr_plot","flatData","happiness_map","var_range","order","number_cols"].includes(name);
         });
         </script>
-
+        <h3>Features</h3>
+        <u>Choloropleth Map</u>
+        <p>Color is used to encode the numeric value of one of the happiness categories</p>
+        <ul>
+          <li>Choose which happiness category the color encodes through the radio buttons</li>
+          <li>Year slider shared with the bar chart to decide which yearly data displayed</li>
+          <li>Hover over countries in the map for a tooltip with accurate attribute value</li>
+        </ul>
+        <u>Stacked Bar chart</u>
+        <p>Each row represents a country, with the country happiness categories stacked to show the total happiness score.</p>
+        <ul>
+          <li>Choose the attribute at the bottom of the bars.This is to allow easier comparision of the variable attribute between countries</li>
+          <li>Year slider shared with the map to decide which yearly data displayed</li>
+          <li>Hover over countries in the map for a tooltip with the percentage the happiness category makes up total happiness score</li>
+          <li>Ascending/Descending order of happiness scores</li>
+          <li>Slider to choose how many country data points displayed, to save screen space</li>
+        </ul>
         <!-- <p>In this demo, <code>labels</code> for hidden <code>radios</code> toggle the content. This is based on the behavior in which clicked <code>labels</code> for a <code>radio</code> or <code>checkbox</code> input will check that <code>input</code>.</p> 
 <pre>&lt;input id="radio-1" type="radio" name="demo-radios"&gt;
 &lt;input id="radio-2" type="radio" name="demo-radios"&gt;</pre>
@@ -105,15 +119,15 @@
     </section>
     <section id="panel-2">
       <main>
-        <h1>Task 2</h1>
-        <h2>Correlation Plot + Parlell Coordinates</h2>
-        <p>yada yada yada</p>
+        <h1>Task 2: Discover Inter-variable relationships</h1>
+        <h2>Correlation Plot + Parllel Coordinates</h2>
+        <p>For task 2 we use a correlation matrix and a parallel coordinate graph, linked by a year slider to explore inter-variable relationships.</p>
         <div id="observablehq-viewof-yearSelect-a561e049"></div>
         <div id="observablehq-corr_plot-a561e049"></div>
         <div id="observablehq-viewof-colorAttribute-a561e049"></div>
         <div id="observablehq-show_legend-a561e049"></div>
         <div id="observablehq-p_coords-a561e049"></div>
-        <p>Credit: <a href="https://observablehq.com/@ampiiere-ws/world-happiness-parelell-coords@498">World happiness- Task 2 by ampiiere&#039;s Workspace</a></p>
+        <p><a href="https://observablehq.com/@ampiiere-ws/world-happiness-parelell-coords@498">World happiness- Task 2 by ampiiere&#039;s Workspace</a></p>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
         <script type="module">
@@ -128,6 +142,20 @@
           return ["data","correlations","y","color"].includes(name);
         });
         </script>
+
+        <h3>Features</h3>
+        <u>Correlation Matrix</u>
+        <p>Provides a rougher, broader overview of how variables relate to each other.</p>
+        <ul>
+          <li>Year slider shared with the parallel coordinates graph to decide which yearly data displayed</li>
+        </ul>
+        <u>Parallel Coordinates</u>
+        <p>Provides a more fine grained view of how variables relate to each other. Colors in lines represent the value of the selected attribute.</p>
+        <ul>
+          <li>Drop down menu allows users to select which attribute the colors in the lines are encoded by.</li>
+          <li>Year slider shared with correlation matrix to decide which yearly data displayed</li>
+          <li>Brushing capabilities, drag your mouse over the axes and highlight certain lines. You can do so over multiple axes.</li>
+        </ul>
       </main>
     </section>
     <section id="panel-3">
