@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - COMP4462</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- TAB CONTROLLERS -->
+<input id="panel-1-ctrl"
+       class="panel-radios" type="radio" name="tab-radios" checked>
+<input id="panel-2-ctrl"
+       class="panel-radios" type="radio" name="tab-radios">
+<input id="panel-3-ctrl"
+       class="panel-radios" type="radio" name="tab-radios">
+<input id="panel-4-ctrl"
+       class="panel-radios" type="radio" name="tab-radios">
+<input id="panel-5-ctrl"
+       class="panel-radios" type="radio" name="tab-radios">
+<input id="nav-ctrl"
+       class="panel-radios" type="checkbox" name="nav-checkbox">
+
+<header id="introduction">
+  <h1>COMP 4462 - Data Visualization</h1>
+</header>
+
+<!-- TABS LIST -->
+<ul id="tabs-list">
+    <!-- MENU TOGGLE -->
+    <label id="open-nav-label" for="nav-ctrl"></label>
+    <li id="li-for-panel-1">
+      <label class="panel-label"
+             for="panel-1-ctrl">Task 1</label>
+    </li><!--INLINE-BLOCK FIX
+ --><li id="li-for-panel-2">
+      <label class="panel-label"
+             for="panel-2-ctrl">Task 2</label>
+    </li><!--INLINE-BLOCK FIX
+ --><li id="li-for-panel-3">
+      <label class="panel-label"
+             for="panel-3-ctrl">Task 3</label>
+    </li><!--INLINE-BLOCK FIX
+ --><li id="li-for-panel-4">
+      <label class="panel-label"
+             for="panel-4-ctrl">Task 4</label>
+    </li><!--INLINE-BLOCK FIX
+ --><li id="li-for-panel-5" class="last">
+      <label class="panel-label"
+             for="panel-5-ctrl">Insights</label>
+    </li>
+    <label id="close-nav-label" for="nav-ctrl">Close</label>
+</ul>
+
+<!-- THE PANELS -->
+<article id="panels">
+  <div class="container">
+    <section id="panel-1">
+      <main>
+        <h1>Task 1</h1>
+        <p>In task one lorem ipsum blah blah blah</p>
+        <h3>Choloropleth Map</h3>
+        <p>AHHHHHH</p>
+        <div id="observablehq-viewof-yearSelect-5eee6406"></div>
+        <div id="observablehq-viewof-map_display_var-5eee6406"></div>
+        <div id="observablehq-mapviz-5eee6406"></div>
+        <h3>Bar Chart</h3>
+        <div id="observablehq-viewof-bar_display_var-5eee6406"></div>
+        <div id="observablehq-viewof-n1-5eee6406"></div>
+        <div id="observablehq-viewof-barchart_view-5eee6406"></div>
+        <div id="observablehq-barchartkey-5eee6406"></div>
+        <div id="observablehq-barchart-5eee6406"></div>
+        <p>Observable link: <a href="https://observablehq.com/@ampiiere-ws/world-happiness@798">World Happiness Task 1 by ampiiere&#039;s Workspace</a></p>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/@ampiiere-ws/world-happiness@798.js?v=4";
+        new Runtime().module(define, name => {
+          if (name === "viewof yearSelect") return new Inspector(document.querySelector("#observablehq-viewof-yearSelect-5eee6406"));
+          if (name === "viewof map_display_var") return new Inspector(document.querySelector("#observablehq-viewof-map_display_var-5eee6406"));
+          if (name === "mapviz") return new Inspector(document.querySelector("#observablehq-mapviz-5eee6406"));
+          if (name === "viewof bar_display_var") return new Inspector(document.querySelector("#observablehq-viewof-bar_display_var-5eee6406"));
+          if (name === "viewof n1") return new Inspector(document.querySelector("#observablehq-viewof-n1-5eee6406"));
+          if (name === "viewof barchart_view") return new Inspector(document.querySelector("#observablehq-viewof-barchart_view-5eee6406"));
+          if (name === "barchartkey") return new Inspector(document.querySelector("#observablehq-barchartkey-5eee6406"));
+          if (name === "barchart") return new Inspector(document.querySelector("#observablehq-barchart-5eee6406"));
+          return ["happiness_select_year","happiness_barchart_data","mapnrange","correlations","pct","countries_ls","new_map","corr_plot","flatData","happiness_map","var_range","order","number_cols"].includes(name);
+        });
+        </script>
+
+        <!-- <p>In this demo, <code>labels</code> for hidden <code>radios</code> toggle the content. This is based on the behavior in which clicked <code>labels</code> for a <code>radio</code> or <code>checkbox</code> input will check that <code>input</code>.</p> 
+<pre>&lt;input id="radio-1" type="radio" name="demo-radios"&gt;
+&lt;input id="radio-2" type="radio" name="demo-radios"&gt;</pre>
+        #radio-1: <input id="radio-1" type="radio" name="demo-radios"> #radio-2: <input id="radio-2" type="radio" name="demo-radios">
+<pre>&lt;label for="radio-1"&gt;Toggle #radio-1&lt;/label&gt;
+&lt;label for="radio-2"&gt;Toggle #radio-2&lt;/label&gt;</pre>
+        <label for="radio-1" class="demo-label">Toggle #radio-1</label>
+        <label for="radio-2" class="demo-label">Toggle #radio-2</label>
+        <p>Click one of the labels above and see its effect on the radios above it.</p>
+        <p>The radios for this pen's tabs are displayed semi-transparently at the top of this demo page.</p> -->
+      </main>
+    </section>
+    <section id="panel-2">
+      <main>
+        <h1>Task 2</h1>
+        <h2>Correlation Plot + Parlell Coordinates</h2>
+        <p>yada yada yada</p>
+        <div id="observablehq-viewof-yearSelect-a561e049"></div>
+        <div id="observablehq-corr_plot-a561e049"></div>
+        <div id="observablehq-viewof-colorAttribute-a561e049"></div>
+        <div id="observablehq-show_legend-a561e049"></div>
+        <div id="observablehq-p_coords-a561e049"></div>
+        <p>Credit: <a href="https://observablehq.com/@ampiiere-ws/world-happiness-parelell-coords@498">World happiness- Task 2 by ampiiere&#039;s Workspace</a></p>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+        import define from "https://api.observablehq.com/@ampiiere-ws/world-happiness-parelell-coords@498.js?v=4";
+        new Runtime().module(define, name => {
+          if (name === "viewof yearSelect") return new Inspector(document.querySelector("#observablehq-viewof-yearSelect-a561e049"));
+          if (name === "corr_plot") return new Inspector(document.querySelector("#observablehq-corr_plot-a561e049"));
+          if (name === "viewof colorAttribute") return new Inspector(document.querySelector("#observablehq-viewof-colorAttribute-a561e049"));
+          if (name === "show_legend") return new Inspector(document.querySelector("#observablehq-show_legend-a561e049"));
+          if (name === "p_coords") return new Inspector(document.querySelector("#observablehq-p_coords-a561e049"));
+          return ["data","correlations","y","color"].includes(name);
+        });
+        </script>
+      </main>
+    </section>
+    <section id="panel-3">
+      <main>
+        <h1>Task 3</h1>
+        <div class='tableauPlaceholder' id='viz1701780058090' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='2015 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Task3Updated&#47;Sheet1&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript><object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+            <param name='embed_code_version' value='3' /> 
+            <param name='site_root' value='' />
+            <param name='name' value='Task3Updated&#47;Sheet1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;Task3Updated&#47;Sheet1&#47;1.png' /> 
+            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' /><param name='language' value='en-US' />
+            <param name='filter' value='publish=yes' /></object>
+        </div>                
+        <script type='text/javascript'>                    
+          var divElement = document.getElementById('viz1701780058090');                    
+          var vizElement = divElement.getElementsByTagName('object')[0];                    
+          vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+          var scriptElement = document.createElement('script');                    
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+      </main>
+    </section>
+    <section id="panel-4">
+      <main>
+        <h1>Task 4</h1>
+        <div class='tableauPlaceholder' id='viz1701780623708' style='position: relative'>
+          <noscript><a href='#'>
+            <img alt='Difference in the SDG Scores and the Happiness Scores of Each Country ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_17006734123080&#47;Sheet4&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> 
+          <param name='site_root' value='' />
+          <param name='name' value='WorldHappinessReport_17006734123080&#47;Sheet4' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wo&#47;WorldHappinessReport_17006734123080&#47;Sheet4&#47;1.png' />
+          <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' /><param name='language' value='en-US' />
+          </object>
+        </div>                
+        <script type='text/javascript'>                    
+          var divElement = document.getElementById('viz1701780623708');                    
+          var vizElement = divElement.getElementsByTagName('object')[0];                    
+          vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+          var scriptElement = document.createElement('script');                    
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
+      </main>
+    </section>
+    <section id="panel-5">
+      <main>
+        <h1>Menu</h1>
+        <p>On small screens, the tabs fold down into an expandable menu. To trigger the menu, I use a <code>checkbox</code> (note that it appears at the top of the screen on smaller screen sizes). There are two labels that trigger this checkbox. One opens and the other closes the menu. The one that opens is absolutely positioned invisibly over the "active" menu item. The closing label is at the bottom of the open menu.</p>
+        <p>The best way I have found to show and hide content without using absolute positioning is to use a combination of <code>max-height</code> and <code>opacity</code>. When "inactive", the content has a <code>max-height: 0</code> and <code>opacity: 0</code>.</p>
+        <p>It also has a <code>transition: opacity</code> when I don't know the future height (this panel's content for example) and <code>transition: opacity, max-height</code> when I do know the future height (like the menu). When "active", the <code>max-height</code> and <code>opacity</code> get positive values and the content will transition in. I'm sure flexbox could get me around this hack, but this works for now.</p>   
+      </main>
+    </section>
+  </div>
+</article>
+<!-- partial -->
+  
+</body>
+</html>
