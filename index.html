@@ -61,7 +61,7 @@
       <main>
         <h1>Task 1: Country happiness patterns + trends</h1>
         <h2>Choloropleth Map + Stacked Bar chart</h2>
-        <p>In task one we use a chloropleth map and a bar chart, linked by the year slider to explore happiness patterns and trends.</p>
+        <p>In task 1, we use a chloropleth map and a bar chart, linked by the year slider to explore happiness patterns and trends.</p>
         <div id="observablehq-viewof-yearSelect-5eee6406"></div>
         <div id="observablehq-viewof-map_display_var-5eee6406"></div>
         <div id="observablehq-mapviz-5eee6406"></div>
@@ -121,7 +121,7 @@
       <main>
         <h1>Task 2: Discover Inter-variable relationships</h1>
         <h2>Correlation Plot + Parllel Coordinates</h2>
-        <p>For task 2 we use a correlation matrix and a parallel coordinate graph, linked by a year slider to explore inter-variable relationships.</p>
+        <p>For task 2, we use a correlation matrix and a parallel coordinate graph, linked by a year slider to explore inter-variable relationships.</p>
         <div id="observablehq-viewof-yearSelect-a561e049"></div>
         <div id="observablehq-corr_plot-a561e049"></div>
         <div id="observablehq-viewof-colorAttribute-a561e049"></div>
@@ -160,7 +160,9 @@
     </section>
     <section id="panel-3">
       <main>
-        <h1>Task 3</h1>
+        <h1>Task 3: Standard of Living, Health & Happiness</h1>
+        <h2>Interactable Bubble Plot</h2>
+        <p>For task 3, we used an Interactable Bubble Plot to demostrate the relationship between Standard of Living, Health & Happiness.</p>
         <div class='tableauPlaceholder' id='viz1701780058090' style='position: relative'>
           <noscript>
             <a href='#'>
@@ -187,6 +189,28 @@
           scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
           vizElement.parentNode.insertBefore(scriptElement, vizElement);                
         </script>
+        <h3>Features</h3> 
+        <u>Encodings</u>
+          <p>Provides users with clear overview.</p>
+          <ol>
+            <li><b>x-coordinate: </b> Happiness score - How <u>happy</u> the people are</li>
+            <li><b>y-coordinate: </b> Current Health Expenditure (CHE) - How <u>healthy</u> the people are</li>
+            <li><b>Size of bubbles: </b> Gross Domestic Product (GDP) - How <u>good</u> the people's <u>living standard</u> is</li>
+            <li><b>Color of bubbles: </b> Level of Development - How <u>developed</u> a country is</li>
+            <li><b>Dotted line: </b> Overall trend of the relationship between encoded data</li>
+          </ol>
+        <u>Animation</u>
+          <p>Provides quick review between different years, to reduce the cognitive load of viewers.</p>
+          <ul>
+            <li><b>Duo-sided play button: </b>Users could play the data in both ascending order and descending order, starting any year in the time range.</li>
+          </ul>
+        <u>Interactability</u>
+          <p>Provides users with further focused details depending on the chosen options.</p>
+          <ol>
+            <li><b>Button: </b>Click to show data of a specific level of development</li>
+            <li><b>Bubbles: </b>Click to focus on a bubble, and show its corresponding coordinates and trend of its level of development</li>
+            <li><b>Year slider: </b> Select a specific year to show corresponding data</li>
+          </ol>
       </main>
     </section>
     <section id="panel-4">
