@@ -14,4 +14,8 @@ Clone repo then run on http server eg. `python3 -m http.server`
 - CHE per capita scores: https://www.who.int/data/gho/data/indicators/indicator-details/GHO/current-health-expenditure-(che)-per-capita-in-us$
 - sdg scores: https://dashboards.sdgindex.org/downloads
 
+### Screenshots
+![alt text](<Screenshot 2024-02-14 at 1.06.59 AM.png>)
+![alt text](<Screenshot 2024-02-14 at 1.03.41 AM.png>)
 
+![alt text](<Screenshot 2024-02-14 at 1.03.26 AM.png>)
